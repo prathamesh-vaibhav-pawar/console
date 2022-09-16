@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="menu-bar">
+            <button onclick="but1()"><a href="#open">
+                Open console manual
+            </a>
+            </button>&nbsp;&nbsp;
+            <button onclick="but2()"><a href="#use">
+                Why is console use?
+            </a>
+            </button>&nbsp;&nbsp;
+            <button onclick="but3()"><a href="#print">
+               printing on console?
+            </a>
+            </button>&nbsp;&nbsp;
+        </section>
+        <h1>Welcome to console world</h1>
+        <div id="setup">
+            <h1>setup for VS studio</h1><br><br>
+        <h2>
+            Step 1 - Make sure your computer is ready for Visual studio <br>
+           Step 2 - Download Visual Studio. <br>
+            Step 3 - Install the Visual Studio Installer. <br>
+            Step 4 - Choose workloads. <br>
+            Step 5 - Choose individual components (optional) <br>
+            Step 6 - Install language packs (optional) <br> 
+            Step 7 - Select the installation location (optional) <br>
+        </h2>
+        </div><br><br>
+        <div class="use" id="use" onclick="div1()"><a href="">
+        <h1>Why console is use?</h1><br><br>
+        <h2>Console is a basic computer or monitor and keyboard that is connected to another computer, server, or a mainframe over a network. It is used to maintain or monitor the status of the network or computer</h2></a><br><br>
+    </div> 
+    <div class="open" id="open">
+        <h1>how to open console?</h1><br><br>
+        <h2>Step 1: To open the console in Chrome, use this keyboard shortcut: "Cmd + Option + J" (on a Mac) or "Ctrl +Shift +J" (on Windows). As an alternative, you can right-click on the webpage and click "Inspect" to open the developer console</h2><br><br>
+
+    </div>
+    <div class="print" id="print">
+        <h1>how to print something on console screen?</h1>
+        <h2>You should use the console. log() method to print to console JavaScript. The JavaScript console log function is mainly used for code debugging as it makes the JavaScript print the output to the console. To open the browser console, right-click on the page and select Inspect, and then click Console.</h2>
+    </div>
+    <script>
+        console.log("my first project.....")
+        var first_name = "prathamesh"
+        var last_name = "pawar"
+        var full_name = first_name.concat(last_name)
+        console.log(full_name)
+        var min_num = Math.min(5,8,30);
+        console.log(min_num);
+        var max_num  = Math.max(23,45,21);
+        console.log(max_num);
+        var a = 15;
+        var b = 20;
+        var add = a + b;
+        console.log(add)
+        function but1(){
+            document.getElementById("open").style.backgroundColor = "grey"
+            window.alert("reload after reading.....")
+        }
+        function but2(){
+            document.getElementById("use").style.backgroundColor = "grey"
+        }
+        function but3(){
+            document.getElementById("print").style.backgroundColor = "grey"
+        }
+        function div1(){
+            document.getElementById("open").style.backgroundColor = "black;"
+        }
+    </script>
+
+    </body>
+</html>
